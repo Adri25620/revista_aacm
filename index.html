@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | Revista AACM</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <div class="contenedor">
+    <!-- DASHBOARD DE BIENVENIDA -->
+    <section class="dashboard" id="dashboard">
+      <div class="perfil-box">
+        <img src="image/perfil.jpg" alt="Foto de presentación" class="foto-perfil" />
+        <div>
+          <strong>ADRIAN</strong>
+          <p style="margin: 0; font-size: 0.9rem;">Estudiante del semestre de agronomia</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h1>Bienvenido a la Revista</h1>
+        <p>
+          una breve explicacion de que trata esto.
+        </p>
+
+        <div class="trabajos-grid">
+          <div class="trabajo-item">
+            <strong>Proyectos realizados</strong>
+            <span>Descripción</span>
+          </div>
+          <div class="trabajo-item">
+            <strong>otro posible proyecto</strong>
+            <span>Otra descripcion</span>
+          </div>
+        </div>
+
+        <button type="button" class="btn" id="btnVerRevista">
+          Ver revista →
+        </button>
+      </div>
+    </section>
+
+    <!-- VISTA DE LA REVISTA -->
+    <section class="seccion-revista" id="seccionRevista">
+      <div class="barra-superior">
+        <button type="button" class="btn btn-secundario" id="btnVolver">
+          ← Volver al inicio
+        </button>
+        <span id="numPagina">Página 1</span>
+      </div>
+
+      <div class="visor-wrap">
+        <div id="revista">
+          <div class="pagina"><img src="image/1.png" alt="Página 1" /></div>
+          <div class="pagina"><img src="image/2.png" alt="Página 2" /></div>
+          <div class="pagina"><img src="image/3.png" alt="Página 3" /></div>
+          <div class="pagina"><img src="image/4.png" alt="Página 4" /></div>
+        </div>
+      </div>
+
+      <div class="controles">
+        <button type="button" class="btn btn-secundario" id="btnPrev">← Anterior</button>
+        <button type="button" class="btn btn-secundario" id="btnNext">Siguiente →</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
