@@ -8,6 +8,8 @@ const numPaginaEl = document.getElementById("numPagina");
 
 let pageFlip = null;
 
+const musicaEl = document.getElementById("musica");
+
 function inicializarRevista() {
   if (pageFlip) return;
 
@@ -34,6 +36,7 @@ function inicializarRevista() {
 }
 
 btnVerRevista.addEventListener("click", () => {
+  musicaEl.play();
   dashboardEl.style.display = "none";
   seccionRevistaEl.classList.add("activa");
   inicializarRevista();
@@ -43,6 +46,8 @@ btnVerRevista.addEventListener("click", () => {
 });
 
 btnVolver.addEventListener("click", () => {
+  musicaEl.pause();
+  musicaEl.currentTime = 0;
   seccionRevistaEl.classList.remove("activa");
   dashboardEl.style.display = "grid";
 });
