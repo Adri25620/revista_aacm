@@ -22,7 +22,7 @@ function inicializarRevista() {
     minHeight: 340,
     maxHeight: 1330,
     showCover: true,
-    usePortrait: esMovil, // En celular muestra 1 hoja a la vez para que no se vea diminuta
+    usePortrait: true, // En celular muestra 1 hoja a la vez para que no se vea diminuta
     mobileScrollSupport: true
   });
 
