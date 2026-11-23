@@ -36,6 +36,7 @@ function inicializarRevista() {
 }
 
 btnVerRevista.addEventListener("click", () => {
+  musicaEl.load();
   musicaEl.play();
   dashboardEl.style.display = "none";
   seccionRevistaEl.classList.add("activa");
